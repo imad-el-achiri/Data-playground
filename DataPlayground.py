@@ -34,6 +34,7 @@ if response.message.tool_calls:
   for tool in response.message.tool_calls:
     # Ensure the function is available, and then call it
     if function_to_call := available_functions.get(tool.function.name):
-      print('Calling function:', tool.function.name)
-      print('Arguments:', tool.function.arguments)
+      #Use these two prints parameters for debugging, the first one shows the chosen tool, the second its parameters
+      #print('Calling function:', tool.function.name)
+      #print('Arguments:', tool.function.arguments)
       function_to_call(**tool.function.arguments)
