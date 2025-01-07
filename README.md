@@ -1,2 +1,2 @@
 # Data-playground
-A new way to analyze your data! Using natural language
+A new way to analyze your data! Zero-code using natural language interaction
