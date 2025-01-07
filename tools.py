@@ -3,11 +3,12 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
+import plost
 
 
 def dfPrinter(*args, **kwargs) -> None:
     """
-    prints a dataframe
+    prints/shows a dataframe/data/dataset
     Args:
       This function does not take any parameters, call it with none
     """
@@ -49,7 +50,13 @@ def histogram(column: str) -> None:
     calling_frame = inspect.stack()[1].frame
     calling_globals = calling_frame.f_globals
     df = calling_globals["df"]
-    fig, ax = plt.subplots()
-    ax.hist(df[column], bins=20)
 
-    st.pyplot(fig)
+    plost.hist(
+    data=df,
+    x=column,
+    aggregate='count')
+
+    #fig, ax = plt.subplots()
+    #ax.hist(df[column], bins=20)
+
+    #st.pyplot(fig)
