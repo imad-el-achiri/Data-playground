@@ -1,10 +1,8 @@
 import inspect
-import pandas as pd
 import streamlit as st
-import numpy as np
-import matplotlib.pyplot as plt
 import plost
-
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 def dfPrinter(*args, **kwargs) -> None:
     """
@@ -56,7 +54,15 @@ def histogram(column: str) -> None:
     x=column,
     aggregate='count')
 
-    #fig, ax = plt.subplots()
-    #ax.hist(df[column], bins=20)
+def corrHeatMap(*args, **kwargs) -> None:
+    """
+    prints/draws/plots a correlation heatmap between all the dataframe columns
+    """
+    calling_frame = inspect.stack()[1].frame
+    calling_globals = calling_frame.f_globals
+    df = calling_globals["df"]
 
-    #st.pyplot(fig)
+    fig, ax = plt.subplots(figsize=(10, 8))
+    sns.heatmap(df.corr(), annot=True, cmap="coolwarm", ax=ax)
+    plt.title("Correlation Heatmap")
+    st.pyplot(fig)

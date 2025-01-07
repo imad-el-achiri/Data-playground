@@ -2,3 +2,6 @@ pandas
 streamlit
 ollama
 plost
+seaborn
+matplotlib
+seaborn
