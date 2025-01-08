@@ -3,11 +3,11 @@ A new way to analyze your data! Zero-code natural language interaction! <Br> <Br
 This agents-based project runs completely locally, no paid LLMs apis (like OpenAI/Gemini) are needed. <Br>
 The model used is a 1B llama 3.2, qunatized to 8 bit, which takes ~ 1.5GB of memory. <Br>
 
-## How to set-up the project:
+## How to setup the project:
 <ol>
   <b>
     <li>
-      LLM set-up by Ollama:
+      LLM setup by Ollama:
     </li>
   </b>
   
@@ -40,7 +40,7 @@ The model used is a 1B llama 3.2, qunatized to 8 bit, which takes ~ 1.5GB of mem
       Clone or download this project as zip file
     </li>
     <li>
-      Open the command line/terminal, navigate to the project directory, and run the command: <code> pip install -r requirements.txt </code>
+      Open the command line/terminal, navigate to the project directory, activate the virtual environment, then run the command: <code> pip install -r requirements.txt </code>
     </li>
   </ul>
   
