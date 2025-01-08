@@ -10,6 +10,7 @@ The model used is a 1B llama 3.2, qunatized to 8 bit, which takes ~ 1.5GB of mem
       LLM set-up by Ollama:
     </li>
   </b>
+  
   <ul>
     <li>
       Download and install Ollama (For Windows/MacOS/Linux) from : https://ollama.com/download
@@ -18,7 +19,28 @@ The model used is a 1B llama 3.2, qunatized to 8 bit, which takes ~ 1.5GB of mem
       After installation, restart your computer
     </li>
     <li>
-      On the command line/terminal run the followin command: ´ollama run llama3.2:1b´
+      On the command line/terminal run the following command: <code>ollama run llama3.2:1b </code>
+    </li>
+  </ul>
+
+  <b>
+    <li>
+      Python setup:
+    </li>
+  </b>
+
+  <ul>
+    <li>
+      Download Python 3.9+ from: https://www.python.org/downloads/
+    </li>
+    <li>
+      Create a virtual environment, by following the instructions for your operating system: https://www.geeksforgeeks.org/python-virtual-environment/
+    </li>
+    <li>
+      Clone or download this project as zip file
+    </li>
+    <li>
+      Open the command line/terminal, navigate to the project directory, and run the command: <code> pip install -r requirements.txt </code>
     </li>
   </ul>
   
