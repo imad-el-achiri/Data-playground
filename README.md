@@ -43,6 +43,30 @@ The model used is a 1B llama 3.2, qunatized to 8 bit, which takes ~ 1.5GB of mem
       Open the command line/terminal, navigate to the project directory, activate the virtual environment, then run the command: <code> pip install -r requirements.txt </code>
     </li>
   </ul>
+
+  <b>
+    <li>
+      Run the project:
+    </li>
+  </b>
+
+  <ul>
+    <li>
+      Make sure that Ollama is running
+    </li>
+    <li>
+      Open the command line/terminal, navigate to the project directory, then run the command <code> streamlit run DataPlayground.py </code>
+    </li>
+    <li>
+      If it does not open automatically, you can access the interface through a web browser at : <code> http://localhost:8501/ </code>
+    </li>
+    <li>
+      Upload your csv file
+    </li>
+    <li>
+      Enjoy prompting!
+    </li>
+  </ul>
   
 </ol>
 
