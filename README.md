@@ -1,7 +1,7 @@
 # Data Playground
 A new way to analyze your data! Zero-code natural language interaction! <Br> 
-<Br> Click on link to watch the demo video <Br>
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/8_GjBYK_6tM/0.jpg)](https://www.youtube.com/watch?v=8_GjBYK_6tM)) <Br>
+<Br> Click on the image below to watch the demo video <Br> <Br>
+[![Demo video](https://img.youtube.com/vi/8_GjBYK_6tM/0.jpg)](https://www.youtube.com/watch?v=8_GjBYK_6tM) <Br> <Br>
 This agents-based project runs completely locally, no paid LLMs apis (like OpenAI/Gemini) are needed. <Br>
 The model used is a 1B llama 3.2, qunatized to 8 bit, which takes ~ 1.5GB of memory. <Br>
 
